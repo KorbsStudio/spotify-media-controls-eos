@@ -21,8 +21,8 @@ dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPl
 dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 ```
 ## Add Controls to Dock
-You can add controls when right click on Spotify from your dock.
-Install with this:
+You can add controls when you right click on Spotify from your dock.
+Install it with this:
 
 ```
 sudo bash <(wget -qO- https://raw.githubusercontent.com/KorbsStudio/spotify-media-controls-eos/main/src/script/install-dock-controls.sh)
