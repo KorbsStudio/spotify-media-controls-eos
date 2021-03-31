@@ -5,8 +5,11 @@ Although your media controls will be locked in with Spotify only, unless you rem
 
 Until then, here are the controls:
 **Pause/Play**
+
 ```dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause```
 **Next Track**
+
 ```dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next```
 **Previous Track**
+
 ```dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous```
