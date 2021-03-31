@@ -1,4 +1,6 @@
 # spotify-media-controls-eos
+<img width="500px" src="https://i.imgur.com/aNB6JPU.png">
+
 It appears sometimes, that you can't control Spotify with your media controls on elementary OS, which gets annoying sometimes.
 So I plan to write a script that updates your keyboard shortcuts, where you media controls can control Spotify no matter what.
 Although your media controls will be locked in with Spotify only, unless you remove the custom keyboard shortcuts.
