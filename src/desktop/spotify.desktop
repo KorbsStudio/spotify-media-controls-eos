@@ -1,0 +1,27 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+GenericName=Music Player
+Icon=spotify-client
+TryExec=spotify
+Exec=spotify %U
+Terminal=false
+MimeType=x-scheme-handler/spotify;
+Categories=Audio;Music;Player;AudioVideo;
+StartupWMClass=spotify
+Actions=spotify-next;spotify-previous;spotify-pause-play;
+
+[Desktop Action spotify-next]
+Name=Next Track
+Exec=dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+Icon=media-seek-forward
+
+[Desktop Action spotify-previous]
+Name=Previous Track
+Exec=dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+Icon=media-seek-forward-rtl
+
+[Desktop Action spotify-pause-play]
+Name=Pause/Play
+Exec=dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+Icon=media-playback-pause
