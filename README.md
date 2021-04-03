@@ -29,6 +29,23 @@ Install it with this:
 ```
 sudo bash <(wget -qO- https://raw.githubusercontent.com/KorbsStudio/spotify-media-controls-eos/main/src/script/install-dock-controls.sh)
 ```
+
+Above command not working? Use this:
+```
+clear
+echo "Creating a backup..."
+sudo mkdir /usr/share/korbs-studio/
+sudo cp /usr/share/applications/spotify.desktop /usr/share/korbs-studio/
+echo "Installing..."
+cd /usr/share/applications/
+sudo rm spotify.desktop
+sudo wget "https://raw.githubusercontent.com/KorbsStudio/spotify-media-controls-eos/main/src/desktop/spotify.desktop"
+echo "Done."
+sleep 1;
+echo "Did an issue occur? Report it to https://github.com/KorbsStudio/spotify-media-controls-eos/issues"
+sleep 1;
+```
+
 What this script does?
  - Creates a new folder to back up __spotify.desktop__ file to `/usr/share/korbs-studio/`
  - Copies __spotify.desktop__ to `/usr/share/korbs-studio`
