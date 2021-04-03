@@ -33,3 +33,8 @@ What this script does?
  - Creates a new folder to back up __spotify.desktop__ file to `/usr/share/korbs-studio/`
  - Copies __spotify.desktop__ to `/usr/share/korbs-studio`
  - Download and install new __spotify.desktop__ file to `/usr/share/applications/`
+
+## Extra
+Assumed keybinds:
+Previous `XF86AudioPrev`
+Next `XF86AudioNext`
